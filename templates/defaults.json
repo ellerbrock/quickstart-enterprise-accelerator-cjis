@@ -9,11 +9,11 @@
     },
     {
         "ParameterKey": "pEC2KeyPairBastion",
-        "ParameterValue": "cikey"
+        "ParameterValue": "$[alfred_getkeypair]"
     },
     {
         "ParameterKey": "pEC2KeyPair",
-        "ParameterValue": "cikey"
+        "ParameterValue": "$[alfred_getkeypair]"
     },
     {
         "ParameterKey": "pSupportsConfig",
