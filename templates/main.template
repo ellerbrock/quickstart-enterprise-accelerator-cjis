@@ -120,180 +120,26 @@ Parameters:
     Type: String
 Mappings:
   AWSInfoRegionMap:
-    ap-northeast-1:
-      Partition: aws
-      QuickStartS3URL: https://s3.amazonaws.com
-    ap-northeast-2:
-      Partition: aws
-      QuickStartS3URL: https://s3.amazonaws.com
-    ap-south-1:
-      Partition: aws
-      QuickStartS3URL: https://s3.amazonaws.com
-    ap-southeast-1:
-      Partition: aws
-      QuickStartS3URL: https://s3.amazonaws.com
-    ap-southeast-2:
-      Partition: aws
-      QuickStartS3URL: https://s3.amazonaws.com
-    ca-central-1:
-      Partition: aws
-      QuickStartS3URL: https://s3.amazonaws.com
-    eu-central-1:
-      Partition: aws
-      QuickStartS3URL: https://s3.amazonaws.com
-    eu-west-1:
-      Partition: aws
-      QuickStartS3URL: https://s3.amazonaws.com
-    eu-west-2:
-      Partition: aws
-      QuickStartS3URL: https://s3.amazonaws.com
-    sa-east-1:
-      Partition: aws
-      QuickStartS3URL: https://s3.amazonaws.com
-    us-east-1:
-      Partition: aws
-      QuickStartS3URL: https://s3.amazonaws.com
-    us-east-2:
-      Partition: aws
-      QuickStartS3URL: https://s3.amazonaws.com
     us-gov-west-1:
       Partition: aws-us-gov
       QuickStartS3URL: https://s3-us-gov-west-1.amazonaws.com
-    us-west-1:
-      Partition: aws
-      QuickStartS3URL: https://s3.amazonaws.com
-    us-west-2:
-      Partition: aws
-      QuickStartS3URL: https://s3.amazonaws.com
   CustomVariables:
     vResourceEnvironmentTagKey:
       Value: Environment
     vResourceEnvironmentTagValue:
       Value: development
   RegionServiceSupport:
-    us-east-1:
-      ConfigRules: true
-      NatGateway: true
-      Glacier: true
-    us-east-2:
-      ConfigRules: true
-      NatGateway: true
-      Glacier: true
-    us-west-1:
-      ConfigRules: true
-      NatGateway: true
-      Glacier: true
-    us-west-2:
-      ConfigRules: true
-      NatGateway: true
-      Glacier: true
-    ca-central-1:
-      ConfigRules: false
-      NatGateway: true
-      Glacier: true
-    eu-central-1:
-      NatGateway: true
-      ConfigRules: true
-      Glacier: true
-    eu-west-1:
-      ConfigRules: true
-      NatGateway: true
-      Glacier: true
-    eu-west-2:
-      ConfigRules: false
-      NatGateway: true
-      Glacier: true
-    ap-northeast-1:
-      ConfigRules: true
-      NatGateway: true
-      Glacier: true
-    ap-northeast-2:
-      ConfigRules: true
-      NatGateway: true
-      Glacier: true
-    ap-south-1:
-      ConfigRules: false
-      NatGateway: true
-      Glacier: true
-    ap-southeast-1:
-      ConfigRules: true
-      NatGateway: true
-      Glacier: false
-    ap-southeast-2:
-      ConfigRules: true
-      NatGateway: true
-      Glacier: true
-    sa-east-1:
-      ConfigRules: false
-      NatGateway: true
-      Glacier: false
     us-gov-west-1:
-      ConfigRules: false
+      ConfigRules: true
       NatGateway: false
-      Glacier: false
+      Glacier: true
   AWSAMIRegionMap:
     AMI:
       AMZNLINUXHVM: amzn-ami-hvm-2017.03.1.20170812-x86_64-gp2
-    ap-northeast-1:
-      AMZNLINUXHVM: ami-4af5022c
-      InstanceType: m4.large
-      InstanceTypeDatabase: db.m4.large
-    ap-northeast-2:
-      AMZNLINUXHVM: ami-8663bae8
-      InstanceType: m4.large
-      InstanceTypeDatabase: db.m4.large
-    ap-south-1:
-      AMZNLINUXHVM: ami-d7abd1b8
-      InstanceType: m4.large
-      InstanceTypeDatabase: db.m4.large
-    ap-southeast-1:
-      AMZNLINUXHVM: ami-fdb8229e
-      InstanceType: m4.large
-      InstanceTypeDatabase: db.m4.large
-    ap-southeast-2:
-      AMZNLINUXHVM: ami-30041c53
-      InstanceType: m4.large
-      InstanceTypeDatabase: db.m4.large
-    ca-central-1:
-      AMZNLINUXHVM: ami-5ac17f3e
-      InstanceType: m4.large
-      InstanceTypeDatabase: db.m4.large
-    eu-central-1:
-      AMZNLINUXHVM: ami-657bd20a
-      InstanceType: m4.large
-      InstanceTypeDatabase: db.m4.large
-    eu-west-1:
-      AMZNLINUXHVM: ami-ebd02392
-      InstanceType: m4.large
-      InstanceTypeDatabase: db.m4.large
-    eu-west-2:
-      AMZNLINUXHVM: ami-489f8e2c
-      InstanceType: m4.large
-      InstanceTypeDatabase: db.m4.large
-    sa-east-1:
-      AMZNLINUXHVM: ami-d27203be
-      InstanceType: m4.large
-      InstanceTypeDatabase: db.m3.large
-    us-east-1:
-      AMZNLINUXHVM: ami-4fffc834
-      InstanceType: m4.large
-      InstanceTypeDatabase: db.m4.large
-    us-east-2:
-      AMZNLINUXHVM: ami-ea87a78f
-      InstanceType: m4.large
-      InstanceTypeDatabase: db.m4.large
     us-gov-west-1:
       AMZNLINUXHVM: ami-ffa61d9e
       InstanceType: m4.large
       InstanceTypeDatabase: db.m3.large
-    us-west-1:
-      AMZNLINUXHVM: ami-3a674d5a
-      InstanceType: m4.large
-      InstanceTypeDatabase: db.m4.large
-    us-west-2:
-      AMZNLINUXHVM: ami-aa5ebdd2
-      InstanceType: m4.large
-      InstanceTypeDatabase: db.m4.large
 Conditions:
   LoadConfigRulesTemplate:
     !Equals
