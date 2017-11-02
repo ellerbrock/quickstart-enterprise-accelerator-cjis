@@ -123,6 +123,10 @@ Mappings:
     us-gov-west-1:
       Partition: aws-us-gov
       QuickStartS3URL: https://s3-us-gov-west-1.amazonaws.com
+    # For CI use only. Do not use this outside us-gov-west-1 region
+    ap-southeast-1:
+      Partition: aws
+      QuickStartS3URL: https://s3.amazonaws.com
   CustomVariables:
     vResourceEnvironmentTagKey:
       Value: Environment
@@ -133,6 +137,11 @@ Mappings:
       ConfigRules: true
       NatGateway: false
       Glacier: true
+    # For CI use only. Do not use this outside us-gov-west-1 region
+    ap-southeast-1:
+      ConfigRules: true
+      NatGateway: true
+      Glacier: false
   AWSAMIRegionMap:
     AMI:
       AMZNLINUXHVM: amzn-ami-hvm-2017.03.1.20170812-x86_64-gp2
@@ -140,6 +149,11 @@ Mappings:
       AMZNLINUXHVM: ami-ffa61d9e
       InstanceType: m4.large
       InstanceTypeDatabase: db.m3.large
+    # For CI use only. Do not use this outside us-gov-west-1 region
+    ap-southeast-1:
+      AMZNLINUXHVM: ami-fdb8229e
+      InstanceType: m4.large
+      InstanceTypeDatabase: db.m4.large
 Conditions:
   LoadConfigRulesTemplate:
     !Equals
