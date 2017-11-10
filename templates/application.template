@@ -1,6 +1,6 @@
 ---
 AWSTemplateFormatVersion: 2010-09-09
-Description: Enterprise Accelerator - Provides nesting for required stacks to deploy a full sample web application with reverse proxy, ELBs, IAM, and other resources (for demonstration/POC/testing) QS(0018)
+Description: Enterprise Accelerator - Provides nesting for required stacks to deploy a full sample web application with reverse proxy, ELBs, IAM, and other resources (for demonstration/POC/testing) (qs-1nrns188p)
 Metadata:
   AWS::CloudFormation::Interface:
     ParameterGroups:
@@ -690,7 +690,7 @@ Resources:
           ######################################################################
           LANDING_PAGE="/var/www/html/landing.html"
           COMPLIANCE_BODY_LABEL="CJIS DSS"
-          COMPLIANCE_SURVEY_LINK="qs-1nrns188p"
+          COMPLIANCE_SURVEY_LINK="cjis"
           COMPLIANCE_MATRIX_FILENAME="CJISD-ITS-DOC-08140-5.5-Controls-Mapping.xlsx"
           ######################################################################
 

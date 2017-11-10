@@ -1,8 +1,7 @@
 ---
 AWSTemplateFormatVersion: 2010-09-09
 Description: Enterprise Accelerator - Provides nesting for required stacks to deploy
-  a full sample web application with reverse proxy, ELBs, IAM, and other resources
-  (for demonstration/POC/testing)
+  a full sample web application with reverse proxy, ELBs, IAM, and other resources (qs-1nrns188u)
 Metadata:
   AWS::CloudFormation::Interface:
     ParameterGroups:
@@ -466,7 +465,7 @@ Outputs:
       - Outputs.WebsiteURL
   SurveyLink:
     Description: Please take a moment to complete the survey by clicking this link
-    Value: https://aws.au1.qualtrics.com/SE/?SID=SV_55sYYdtY1NhTTgN&qs=qs-1nrns188u
+    Value: https://aws.au1.qualtrics.com/SE/?SID=SV_55sYYdtY1NhTTgN&s=${COMPLIANCE_SURVEY_LINK}
   Help:
     Description: For assistance or questions regarding this quickstart please email
       compliance-accelerator@amazon.com
