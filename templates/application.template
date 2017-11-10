@@ -690,7 +690,7 @@ Resources:
           ######################################################################
           LANDING_PAGE="/var/www/html/landing.html"
           COMPLIANCE_BODY_LABEL="CJIS DSS"
-          COMPLIANCE_SURVEY_LINK="cjis"
+          COMPLIANCE_SURVEY_LINK="qs-1nrns188p"
           COMPLIANCE_MATRIX_FILENAME="CJISD-ITS-DOC-08140-5.5-Controls-Mapping.xlsx"
           ######################################################################
 
