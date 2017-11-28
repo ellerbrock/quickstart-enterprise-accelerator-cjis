@@ -1,7 +1,8 @@
 ---
 AWSTemplateFormatVersion: 2010-09-09
 Description: Enterprise Accelerator - Provides nesting for required stacks to deploy
-  a full sample web application with reverse proxy, ELBs, IAM, and other resources (qs-1nrns188u)
+  a full sample web application with reverse proxy, ELBs, IAM, and other resources
+  (qs-1nrns188u)
 Metadata:
   AWS::CloudFormation::Interface:
     ParameterGroups:
@@ -141,9 +142,9 @@ Mappings:
       Glacier: false
   AWSAMIRegionMap:
     AMI:
-      AMZNLINUXHVM: amzn-ami-hvm-2017.09.1.20171103-x86_64-gp2
+      AMZNLINUXHVM: amzn-ami-hvm-2017.09.1.20171120-x86_64-gp2
     ap-southeast-1:
-      AMZNLINUXHVM: ami-dd7935be
+      AMZNLINUXHVM: ami-c63d6aa5
       InstanceType: m4.large
       InstanceTypeDatabase: db.m4.large
     us-gov-west-1:
