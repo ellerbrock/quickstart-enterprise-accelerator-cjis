@@ -689,7 +689,7 @@ Resources:
           #     NOTE: UPDATE THESE VALUES ACCORDING TO THE COMPLIANCE BODY     #
           ######################################################################
           LANDING_PAGE="/var/www/html/landing.html"
-          COMPLIANCE_BODY_LABEL="CJIS DSS"
+          COMPLIANCE_BODY_LABEL="CJIS Security Policy 5.6"
           COMPLIANCE_SURVEY_LINK="cjis"
           COMPLIANCE_MATRIX_FILENAME="CJISD-ITS-DOC-08140-5.6-Controls-Mapping.xlsx"
           ######################################################################
