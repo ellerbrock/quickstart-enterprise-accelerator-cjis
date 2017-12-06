@@ -1,14 +1,19 @@
 # quickstart-enterprise-accelerator-cjis
+## Standardized Architecture for CJIS-based Assurance Frameworks in the AWS Cloud
 
-The CJIS Enterprise Accelerator Quick Start deploys a standardized
-environment that helps organizations with workloads that must comply
-with the FBI's Criminal Justice Information Services standard.
+This Quick Start deploys and configures a standardized architecture that helps organizations with workloads that fall in scope for the 
+[Criminal Justice Information Services (CJIS) Security Policy version 5.6](https://www.fbi.gov/file-repository/cjis-security-policy-v5_6_20170605.pdf). 
 
-The Quick Start will deploy a standard three-tier web architecture
-using multiple Amazon VPCs (notional development Amazon VPC shown):
+These requirements typically apply to systems that must go through a formal assessment and authorization process to ensure sufficient protection of confidentiality, integrity, and availability of information and information systems, based on the security category and impact level of the system (low, moderate, or high), and a risk determination.
 
-![Architecture](https://docs.aws.amazon.com/quickstart/latest/accelerator-nist/images/nist-on-aws-architecture.png)
+The deployment is automated by customizable AWS CloudFormation templates and scripts that build and configure the environment in about 30 minutes. 
+You can also use the AWS CloudFormation templates as a starting point for your own implementation.
 
-You can find more information on the Standardized Architecture for
-CJIS on the AWS Cloud: Quick Start Reference Deployment
-[docs web page](https://docs.aws.amazon.com/quickstart/latest/accelerator-cjis/).
+![Quick Start architecture for CJIS Security Policy](https://d0.awsstatic.com/partner-network/QuickStart/datasheets/quickstart-architecture-for-cjis-on-the-aws-cloud.png)
+
+For architectural details, step-by-step instructions, and customization options, see the [deployment guide](https://s3.amazonaws.com/quickstart-reference/enterprise-accelerator/cjis/latest/doc/standard-cjis-architecture-on-the-aws-cloud.pdf).
+
+The Quick Start also includes a [security controls matrix (Microsoft Excel spreadsheet)](https://s3.amazonaws.com/quickstart-reference/enterprise-accelerator/cjis/latest/assets/CJISD-ITS-DOC-08140-5.6-Controls-Mapping.xlsx), which shows how the Quick Start components and configuration map to CJIS requirements.
+
+To post feedback, submit feature ideas, or report bugs, use the **Issues** section of this GitHub repo.
+If you'd like to submit code for this Quick Start, please review the [AWS Quick Start Contributor's Kit](https://aws-quickstart.github.io/).
